@@ -22,5 +22,6 @@ def square_number():
             "message": "Invalid input. Please provide a valid number."
         })
 
-# Required for Vercel to detect the app
-app = app
+if __name__ == "__main__":
+    # Run the Flask app
+    app.run(debug=True)
